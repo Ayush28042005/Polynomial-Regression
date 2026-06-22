@@ -1,91 +1,44 @@
--> Project Overview
+# Polynomial Regression – Position Salary Prediction
 
-This project implements Polynomial Regression to accurately model and predict salaries based on job position levels.
-
-While Linear Regression assumes a straight-line relationship between variables, real-world data often follows more complex, curved patterns. In this dataset, salary growth increases rapidly at higher job levels, making a linear model insufficient.
-
-The objective of this project is to explore non-linear regression techniques and understand how transforming features can significantly improve model performance.
-
-This project represents a progression from basic regression modeling to more advanced predictive techniques.
+Predicting salaries based on job position levels using Polynomial Regression. Built to understand why linear models fail on curved data and how polynomial feature transformation fixes it.
 
 
--> Dataset Description
+## Dataset
 
-The dataset consists of structured salary data across different hierarchical job levels. It includes:
-
-Position Level – A numerical representation of job hierarchy
-
-Salary – The corresponding compensation for each level
-
-The dataset clearly demonstrates a non-linear relationship, where salary increases at an accelerating rate as the position level rises.
-
-This makes it an ideal example for demonstrating the power of Polynomial Regression.
+- **Position_Salaries.csv** - 10 records with Position Level (1–10) and corresponding Salary
 
 
--> Conceptual Understanding
+## What I Did
 
-In traditional Linear Regression, the model attempts to fit a straight line through the data. However, when the relationship between variables is curved, a linear model results in underfitting and poor predictions.
-
-Polynomial Regression solves this by:
-
-Transforming the original feature into higher-degree polynomial features
-
-Allowing the model to fit a curved line instead of a straight line
-
-Capturing complex growth patterns in the dataset
-
-By increasing the polynomial degree, the model gains flexibility to better represent the underlying data structure.
+- Visualised the data to confirm non-linear salary growth
+- Trained a Linear Regression model as a baseline
+- Applied Polynomial feature transformation (degree 4)
+- Trained a Polynomial Regression model on transformed features
+- Compared both models visually - polynomial curve vs straight line
 
 
--> Model Insights
+## Key Insight
 
-Through implementation and visualization, this project demonstrates:
-
-Why linear regression fails to capture exponential salary growth
-
-How polynomial transformation improves prediction accuracy
-
-The impact of model complexity on fitting the data
-
-The balance between underfitting and overfitting
-
-The graphical comparison between linear and polynomial models clearly highlights the superiority of polynomial regression for non-linear data.
+Linear regression severely underfits this dataset — salary grows exponentially at higher levels, not linearly. Polynomial regression captures this curve and predicts far more accurately.
 
 
--> Tools & Technologies Used
+## Tech Stack
 
-Python
-
-NumPy
-
-Pandas
-
-Matplotlib
-
-Scikit-learn
-
-Jupyter Notebook
-
-These tools enable data preprocessing, feature transformation, model training, and result visualization in a structured workflow.
-
- 
--> Key Learning Outcomes
-
-Through this project, I strengthened my understanding of:
-
-Non-linear regression modeling
-
-Feature engineering using polynomial transformation
-
-Model comparison techniques
-
-The importance of selecting appropriate algorithms
-
-Bias–variance tradeoff in regression
-
-This project helped me move beyond foundational regression concepts and understand how machine learning models can be adapted for complex data patterns.
+Python, Pandas, NumPy, Matplotlib, Scikit-learn, Jupyter Notebook
 
 
--> Conclusion
+## How to Run
 
-This project demonstrates how machine learning models must be chosen and adapted according to data behavior. By implementing Polynomial Regression, I was able to model non-linear salary growth effectively and gain deeper insights into predictive modeling.
+```bash
+git clone https://github.com/Ayush28042005/Polynomial-Regression.git
+cd Polynomial-Regression
+pip install pandas numpy matplotlib scikit-learn
+jupyter notebook polynomial-regression.ipynb
+```
+
+
+## Author
+
+Ayush Saini
+
+
