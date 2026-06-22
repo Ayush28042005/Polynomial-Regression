@@ -1,4 +1,4 @@
-# Polynomial Regression – Position Salary Prediction
+# Polynomial Regression - Position Salary Prediction
 
 Predicting salaries based on job position levels using Polynomial Regression. Built to understand why linear models fail on curved data and how polynomial feature transformation fixes it.
 
